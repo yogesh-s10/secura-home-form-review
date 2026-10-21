@@ -1,6 +1,6 @@
 # Secura Home enquiry form review
 
-A small, self-initiated, AI-assisted learning project: record a form-label finding and prepare a local HTML example of a proposed change.
+A small, self-initiated learning project: record a form-label finding and prepare a local HTML example of a proposed change.
 
 ## The finding
 
@@ -35,4 +35,4 @@ Download [form-label-example.html](form-label-example.html), open it in a browse
 
 The proposed HTML label structure has been checked. Local browser interaction, mobile layout and screen-reader behaviour have not yet been tested. No enquiry was submitted and the live website was not changed. No effect on leads, sales or internal CRM systems has been established.
 
-ChatGPT/Codex assisted with the browser investigation, example code and structural checks. This is an ongoing learning project.
+This is an ongoing learning project.
