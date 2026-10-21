@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form label example</title>
+  <style>
+    body { max-width: 720px; margin: 40px auto; padding: 0 20px; font: 18px/1.5 system-ui, sans-serif; }
+    section { margin: 24px 0; padding: 20px; border: 1px solid #bbb; border-radius: 6px; }
+    input { display: block; margin-top: 8px; padding: 8px; font: inherit; }
+    input:focus { outline: 3px solid #167080; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Connecting a field label to its input</h1>
+    <p>A local example based on the first-name field captured from Secura Home's public contact page. The first sample retains the missing label connection; the second shows the proposed change.</p>
+    <p>Click <strong>First Name*</strong> above each box and compare which input receives focus. No personal information is needed.</p>
+
+    <section id="before">
+      <h2>Captured structure</h2>
+      <!-- The visible caption is plain text, with no coded link to the input. -->
+      <div>First Name*</div>
+      <input name="first_name" type="text">
+    </section>
+
+    <section id="after">
+      <h2>Proposed change</h2>
+      <!-- Matching for and id values connect the label to its input. -->
+      <label for="first-name">First Name*</label>
+      <input id="first-name" name="first_name" type="text">
+    </section>
+
+    <h2>The change in code</h2>
+    <pre>&lt;label for="first-name"&gt;First Name*&lt;/label&gt;
+&lt;input id="first-name" name="first_name" type="text"&gt;</pre>
+    <p>The original name and type are preserved. This example checks one label relationship; it is not a replacement for the complete form.</p>
+    <p>Local browser interaction and screen-reader behaviour have not yet been tested. The live site has not been changed.</p>
+    <p>Source: <a href="https://www.securahome.co.uk/contact/">Secura Home contact page</a>, captured 21 October 2026. Prepared with ChatGPT/Codex assistance.</p>
+    <p>This page has no submission button, JavaScript, external assets or data storage.</p>
+  </main>
+</body>
+</html>
